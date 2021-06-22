@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		0E84FAD559D7916D02A94AE4 /* Pods_Memo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2203B18A188120F76B5855B9 /* Pods_Memo.framework */; };
+		436CA39C2681FEAB00391E20 /* THEnrkkrR.otf in Resources */ = {isa = PBXBuildFile; fileRef = 436CA3992681FEAB00391E20 /* THEnrkkrR.otf */; };
+		436CA39D2681FEAB00391E20 /* THEnrkkrB.otf in Resources */ = {isa = PBXBuildFile; fileRef = 436CA39A2681FEAB00391E20 /* THEnrkkrB.otf */; };
+		436CA39E2681FEAB00391E20 /* THEnrkkrM.otf in Resources */ = {isa = PBXBuildFile; fileRef = 436CA39B2681FEAB00391E20 /* THEnrkkrM.otf */; };
+		439DB5422681D75100F631A6 /* MemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439DB5412681D75100F631A6 /* MemoViewController.swift */; };
+		439DB5452681DA1700F631A6 /* MemoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439DB5442681DA1700F631A6 /* MemoCell.swift */; };
 		43A06C9026819DBF00F098FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A06C8F26819DBF00F098FE /* AppDelegate.swift */; };
 		43A06C9226819DBF00F098FE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A06C9126819DBF00F098FE /* SceneDelegate.swift */; };
 		43A06C9726819DBF00F098FE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43A06C9526819DBF00F098FE /* Main.storyboard */; };
@@ -15,10 +20,19 @@
 		43A06C9C26819DC000F098FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43A06C9A26819DC000F098FE /* LaunchScreen.storyboard */; };
 		43A06CB02681B00700F098FE /* MemoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A06CAF2681B00700F098FE /* MemoViewModel.swift */; };
 		43A06CB22681B01700F098FE /* MemoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A06CB12681B01700F098FE /* MemoModel.swift */; };
+		43E948602681B5E90092DED5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 43E9485F2681B5E90092DED5 /* GoogleService-Info.plist */; };
+		43E948622681C0AC0092DED5 /* MemoFireBaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E948612681C0AC0092DED5 /* MemoFireBaseManager.swift */; };
+		43E948642681C2DB0092DED5 /* BaseFireBaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E948632681C2DB0092DED5 /* BaseFireBaseManager.swift */; };
+		43E948662681C78D0092DED5 /* WriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E948652681C78D0092DED5 /* WriteViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2203B18A188120F76B5855B9 /* Pods_Memo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Memo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		436CA3992681FEAB00391E20 /* THEnrkkrR.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = THEnrkkrR.otf; sourceTree = "<group>"; };
+		436CA39A2681FEAB00391E20 /* THEnrkkrB.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = THEnrkkrB.otf; sourceTree = "<group>"; };
+		436CA39B2681FEAB00391E20 /* THEnrkkrM.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = THEnrkkrM.otf; sourceTree = "<group>"; };
+		439DB5412681D75100F631A6 /* MemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoViewController.swift; sourceTree = "<group>"; };
+		439DB5442681DA1700F631A6 /* MemoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoCell.swift; sourceTree = "<group>"; };
 		43A06C8C26819DBF00F098FE /* Memo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Memo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		43A06C8F26819DBF00F098FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		43A06C9126819DBF00F098FE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -28,6 +42,10 @@
 		43A06C9D26819DC000F098FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		43A06CAF2681B00700F098FE /* MemoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoViewModel.swift; sourceTree = "<group>"; };
 		43A06CB12681B01700F098FE /* MemoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoModel.swift; sourceTree = "<group>"; };
+		43E9485F2681B5E90092DED5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		43E948612681C0AC0092DED5 /* MemoFireBaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoFireBaseManager.swift; sourceTree = "<group>"; };
+		43E948632681C2DB0092DED5 /* BaseFireBaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseFireBaseManager.swift; sourceTree = "<group>"; };
+		43E948652681C78D0092DED5 /* WriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteViewController.swift; sourceTree = "<group>"; };
 		6CD372EBCFA21DEC4E2630DC /* Pods-Memo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Memo.debug.xcconfig"; path = "Target Support Files/Pods-Memo/Pods-Memo.debug.xcconfig"; sourceTree = "<group>"; };
 		B9FFA217B910B2F78A3BDB8F /* Pods-Memo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Memo.release.xcconfig"; path = "Target Support Files/Pods-Memo/Pods-Memo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -44,6 +62,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4375421C2681E8B100F4B613 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				436CA39A2681FEAB00391E20 /* THEnrkkrB.otf */,
+				436CA39B2681FEAB00391E20 /* THEnrkkrM.otf */,
+				436CA3992681FEAB00391E20 /* THEnrkkrR.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		439DB5432681D9DD00F631A6 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				439DB5442681DA1700F631A6 /* MemoCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		43A06C8326819DBF00F098FE = {
 			isa = PBXGroup;
 			children = (
@@ -65,6 +101,7 @@
 		43A06C8E26819DBF00F098FE /* Memo */ = {
 			isa = PBXGroup;
 			children = (
+				43E9485F2681B5E90092DED5 /* GoogleService-Info.plist */,
 				43A06C9D26819DC000F098FE /* Info.plist */,
 				43A06CAC2681A36A00F098FE /* Base */,
 				43A06CAD2681A62B00F098FE /* Delegates */,
@@ -82,6 +119,8 @@
 		43A06CA62681A32C00F098FE /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				43E948612681C0AC0092DED5 /* MemoFireBaseManager.swift */,
+				43E948632681C2DB0092DED5 /* BaseFireBaseManager.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -96,6 +135,7 @@
 		43A06CA82681A34700F098FE /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				4375421C2681E8B100F4B613 /* Fonts */,
 				43A06C9826819DC000F098FE /* Assets.xcassets */,
 			);
 			path = Resources;
@@ -112,6 +152,9 @@
 		43A06CAA2681A35500F098FE /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				439DB5432681D9DD00F631A6 /* Cell */,
+				43E948652681C78D0092DED5 /* WriteViewController.swift */,
+				439DB5412681D75100F631A6 /* MemoViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -226,8 +269,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				43A06C9C26819DC000F098FE /* LaunchScreen.storyboard in Resources */,
+				436CA39C2681FEAB00391E20 /* THEnrkkrR.otf in Resources */,
+				436CA39E2681FEAB00391E20 /* THEnrkkrM.otf in Resources */,
+				43E948602681B5E90092DED5 /* GoogleService-Info.plist in Resources */,
 				43A06C9926819DC000F098FE /* Assets.xcassets in Resources */,
 				43A06C9726819DBF00F098FE /* Main.storyboard in Resources */,
+				436CA39D2681FEAB00391E20 /* THEnrkkrB.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,10 +327,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				439DB5422681D75100F631A6 /* MemoViewController.swift in Sources */,
+				43E948642681C2DB0092DED5 /* BaseFireBaseManager.swift in Sources */,
 				43A06CB02681B00700F098FE /* MemoViewModel.swift in Sources */,
 				43A06CB22681B01700F098FE /* MemoModel.swift in Sources */,
+				43E948622681C0AC0092DED5 /* MemoFireBaseManager.swift in Sources */,
 				43A06C9026819DBF00F098FE /* AppDelegate.swift in Sources */,
 				43A06C9226819DBF00F098FE /* SceneDelegate.swift in Sources */,
+				43E948662681C78D0092DED5 /* WriteViewController.swift in Sources */,
+				439DB5452681DA1700F631A6 /* MemoCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -11,4 +11,7 @@ target 'Memo' do
   pod 'ReactorKit'
   pod 'SnapKit'
   pod 'Alamofire'
+  
+  pod 'Firebase/Analytics'
+  pod 'Firebase/Firestore'
 end
