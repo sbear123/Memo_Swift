@@ -8,13 +8,31 @@
 import Foundation
 
 class Memo: Codable {
+    var id: String
     var title: String
     var content: String
     var date: Date
     
-    init(title: String, content: String) {
+    init(id: String, title: String, content: String,_ dateS: Date?) {
+        self.id = id
         self.title = title
         self.content = content
-        self.date = Date()
+        if let date = dateS {
+            self.date = date
+        } else {
+            self.date = Date()
+        }
     }
 }
+
+extension String {
+    func toDate() -> Date? { //"yyyy-MM-dd HH:mm:ss"
+        let dateFormatter = DateFormatter()
+        dateFormatter.locale = Locale(identifier: "ko_kr")
+        dateFormatter.timeZone = TimeZone(abbreviation: "KST")
+        dateFormatter.dateFormat = "yyyy.MM.dd."
+        if let date = dateFormatter.date(from: self) { return date }
+        else { return nil }
+    }
+}
+

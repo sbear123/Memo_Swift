@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0E84FAD559D7916D02A94AE4 /* Pods_Memo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2203B18A188120F76B5855B9 /* Pods_Memo.framework */; };
+		431224C22682DC8500803590 /* CustomError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 431224C12682DC8500803590 /* CustomError.swift */; };
 		436CA39C2681FEAB00391E20 /* THEnrkkrR.otf in Resources */ = {isa = PBXBuildFile; fileRef = 436CA3992681FEAB00391E20 /* THEnrkkrR.otf */; };
 		436CA39D2681FEAB00391E20 /* THEnrkkrB.otf in Resources */ = {isa = PBXBuildFile; fileRef = 436CA39A2681FEAB00391E20 /* THEnrkkrB.otf */; };
 		436CA39E2681FEAB00391E20 /* THEnrkkrM.otf in Resources */ = {isa = PBXBuildFile; fileRef = 436CA39B2681FEAB00391E20 /* THEnrkkrM.otf */; };
@@ -28,6 +29,7 @@
 
 /* Begin PBXFileReference section */
 		2203B18A188120F76B5855B9 /* Pods_Memo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Memo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		431224C12682DC8500803590 /* CustomError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomError.swift; sourceTree = "<group>"; };
 		436CA3992681FEAB00391E20 /* THEnrkkrR.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = THEnrkkrR.otf; sourceTree = "<group>"; };
 		436CA39A2681FEAB00391E20 /* THEnrkkrB.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = THEnrkkrB.otf; sourceTree = "<group>"; };
 		436CA39B2681FEAB00391E20 /* THEnrkkrM.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = THEnrkkrM.otf; sourceTree = "<group>"; };
@@ -62,6 +64,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		431224C02682DC5600803590 /* Widget */ = {
+			isa = PBXGroup;
+			children = (
+				431224C12682DC8500803590 /* CustomError.swift */,
+			);
+			path = Widget;
+			sourceTree = "<group>";
+		};
 		4375421C2681E8B100F4B613 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
@@ -152,6 +162,7 @@
 		43A06CAA2681A35500F098FE /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				431224C02682DC5600803590 /* Widget */,
 				439DB5432681D9DD00F631A6 /* Cell */,
 				43E948652681C78D0092DED5 /* WriteViewController.swift */,
 				439DB5412681D75100F631A6 /* MemoViewController.swift */,
@@ -332,6 +343,7 @@
 				43A06CB02681B00700F098FE /* MemoViewModel.swift in Sources */,
 				43A06CB22681B01700F098FE /* MemoModel.swift in Sources */,
 				43E948622681C0AC0092DED5 /* MemoFireBaseManager.swift in Sources */,
+				431224C22682DC8500803590 /* CustomError.swift in Sources */,
 				43A06C9026819DBF00F098FE /* AppDelegate.swift in Sources */,
 				43A06C9226819DBF00F098FE /* SceneDelegate.swift in Sources */,
 				43E948662681C78D0092DED5 /* WriteViewController.swift in Sources */,

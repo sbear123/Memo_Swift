@@ -51,8 +51,8 @@
                                             <color key="textColor" red="0.088336512917761748" green="0.088105222862655083" blue="0.09214528401692712" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="2021.06.22." textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o7o-bW-BjT">
-                                            <rect key="frame" x="305" y="44" width="89" height="20"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="date" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o7o-bW-BjT">
+                                            <rect key="frame" x="288" y="44" width="106" height="20"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" name="THEYellR" family="THEYellR" pointSize="20"/>
                                             <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -83,6 +83,9 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="table" destination="age-z8-07B" id="IyC-t5-bj2"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Iqc-lQ-plz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -131,7 +134,11 @@
                         <viewLayoutGuide key="safeArea" id="5LI-0Q-xBV"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="2PK-0d-kXc"/>
+                    <navigationItem key="navigationItem" id="2PK-0d-kXc">
+                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="save" id="4Og-6d-Jb5">
+                            <color key="tintColor" red="0.13580432534217834" green="0.085929505527019501" blue="0.51807111501693726" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="contentM" destination="grj-Ky-Vct" id="WlI-Ku-Bjl"/>
                         <outlet property="dateM" destination="25t-lc-zib" id="Cei-JH-2Ho"/>
@@ -153,6 +160,9 @@
                         <textAttributes key="titleTextAttributes">
                             <color key="textColor" red="0.51167327165603638" green="0.4497760534286499" blue="0.90542477369308472" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" red="0.50948315860000004" green="0.53568243979999997" blue="0.94610553980000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
                     </navigationBar>
                     <connections>
                         <segue destination="919-zB-Gfu" kind="relationship" relationship="rootViewController" id="bS1-Kc-Zpg"/>
@@ -166,6 +176,7 @@
     <inferredMetricsTieBreakers>
         <segue reference="PiW-zP-ieI"/>
     </inferredMetricsTieBreakers>
+    <color key="tintColor" red="0.13580432534217834" green="0.085929505527019501" blue="0.51807111501693726" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

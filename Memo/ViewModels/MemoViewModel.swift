@@ -12,17 +12,59 @@ import RxCocoa
 class MemoViewModel {
     static let shared = MemoViewModel()
     
-    var memoList: [Memo] = [
-        Memo(title: "메모하기", content: "메모장을 만들어볼게요"),
-        Memo(title: "오늘의 메모", content: "오늘은 메모를 해볼게요!")
-    ] {
-        didSet{
-            //tablelist업데이트 코드 작성
-        }
-    }
+    let network = MemoFireBaseManager()
+    
+    let disposeBag = DisposeBag()
+    
+    var memoList: [Memo] = []
     
     func getMemo(_ num: Int) -> Memo {
         return memoList[num]
+    }
+    
+    func updateMemo(_ memo: Memo) {
+        memoList.append(memo)
+    }
+    
+    func loadMemo(handler: @escaping (Bool) -> Void){
+        network.read().subscribe(
+            onSuccess: { arr in
+                self.memoList = arr
+                handler(true)
+            },
+            onFailure: { err in
+                handler(false)
+            }).disposed(by: disposeBag)
+    }
+    
+    func write(memo: Memo, handler: @escaping (String) -> Void){
+        network.post(request: memo).subscribe(
+            onSuccess: { id in
+                handler(id)
+            },
+            onFailure: { err in
+                handler("")
+            }).disposed(by: disposeBag)
+    }
+    
+    func delete(memo: Memo, handler: @escaping (Bool) -> Void){
+        network.delete(request: memo).subscribe(
+            onSuccess: { _ in
+                handler(true)
+            },
+            onFailure: { err in
+                handler(false)
+            }).disposed(by: disposeBag)
+    }
+    
+    func update(memo: Memo, handler: @escaping (Bool) -> Void){
+        network.put(request: memo).subscribe(
+            onSuccess: {_ in
+                handler(true)
+            },
+            onFailure: { err in
+                handler(false)
+            }).disposed(by: disposeBag)
     }
     
 }

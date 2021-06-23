@@ -16,7 +16,7 @@ class MemoCell: UITableViewCell {
     func update(memo: Memo) {
         title_M.text = memo.title
         content_M.text = memo.content
-        date_M.text = dateToString(time: memo.date)
+        date_M.text = memo.date.toString()
     }
     
     override func awakeFromNib() {
@@ -28,10 +28,12 @@ class MemoCell: UITableViewCell {
     }
 }
 
-func dateToString(time: Date) -> String {
-    let date = DateFormatter()
-    date.locale = Locale(identifier: "ko_kr")
-    date.timeZone = TimeZone(abbreviation: "KST")
-    date.dateFormat = ("yyyy.MM.dd.")
-    return date.string(from: time)
+extension Date {
+    func toString() -> String {
+        let dateFormatter = DateFormatter()
+        dateFormatter.locale = Locale(identifier: "ko_kr")
+        dateFormatter.timeZone = TimeZone(abbreviation: "KST")
+        dateFormatter.dateFormat = "yyyy.MM.dd."
+        return dateFormatter.string(from: self)
+    }
 }
