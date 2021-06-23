@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0E84FAD559D7916D02A94AE4 /* Pods_Memo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2203B18A188120F76B5855B9 /* Pods_Memo.framework */; };
 		431224C22682DC8500803590 /* CustomError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 431224C12682DC8500803590 /* CustomError.swift */; };
+		431224CD268356ED00803590 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 431224CF268356ED00803590 /* Localizable.strings */; };
 		436CA39C2681FEAB00391E20 /* THEnrkkrR.otf in Resources */ = {isa = PBXBuildFile; fileRef = 436CA3992681FEAB00391E20 /* THEnrkkrR.otf */; };
 		436CA39D2681FEAB00391E20 /* THEnrkkrB.otf in Resources */ = {isa = PBXBuildFile; fileRef = 436CA39A2681FEAB00391E20 /* THEnrkkrB.otf */; };
 		436CA39E2681FEAB00391E20 /* THEnrkkrM.otf in Resources */ = {isa = PBXBuildFile; fileRef = 436CA39B2681FEAB00391E20 /* THEnrkkrM.otf */; };
@@ -27,9 +28,31 @@
 		43E948662681C78D0092DED5 /* WriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E948652681C78D0092DED5 /* WriteViewController.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		431224C52683565500803590 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 7;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		2203B18A188120F76B5855B9 /* Pods_Memo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Memo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		431224C12682DC8500803590 /* CustomError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomError.swift; sourceTree = "<group>"; };
+		431224C72683569900803590 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		431224C82683569900803590 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Main.strings; sourceTree = "<group>"; };
+		431224C9268356CC00803590 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		431224CA268356CD00803590 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Main.strings; sourceTree = "<group>"; };
+		431224CB268356E000803590 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		431224CC268356E000803590 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		431224CE268356ED00803590 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		431224D0268356F100803590 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		431224D1268356F300803590 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
+		431224D2268356F400803590 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Localizable.strings; sourceTree = "<group>"; };
 		436CA3992681FEAB00391E20 /* THEnrkkrR.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = THEnrkkrR.otf; sourceTree = "<group>"; };
 		436CA39A2681FEAB00391E20 /* THEnrkkrB.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = THEnrkkrB.otf; sourceTree = "<group>"; };
 		436CA39B2681FEAB00391E20 /* THEnrkkrM.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = THEnrkkrM.otf; sourceTree = "<group>"; };
@@ -122,6 +145,7 @@
 				43A06CAA2681A35500F098FE /* ViewControllers */,
 				43A06CAE2681A64A00F098FE /* ViewModels */,
 				43A06CAB2681A36100F098FE /* Views */,
+				431224CF268356ED00803590 /* Localizable.strings */,
 			);
 			path = Memo;
 			sourceTree = "<group>";
@@ -232,6 +256,8 @@
 				43A06C8926819DBF00F098FE /* Frameworks */,
 				43A06C8A26819DBF00F098FE /* Resources */,
 				DF3F7FC5F2DCC8A6FD540D9F /* [CP] Embed Pods Frameworks */,
+				431224C52683565500803590 /* CopyFiles */,
+				431224C62683565A00803590 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -263,6 +289,9 @@
 			knownRegions = (
 				en,
 				Base,
+				ko,
+				ja,
+				"zh-Hans",
 			);
 			mainGroup = 43A06C8326819DBF00F098FE;
 			productRefGroup = 43A06C8D26819DBF00F098FE /* Products */;
@@ -284,6 +313,7 @@
 				436CA39E2681FEAB00391E20 /* THEnrkkrM.otf in Resources */,
 				43E948602681B5E90092DED5 /* GoogleService-Info.plist in Resources */,
 				43A06C9926819DC000F098FE /* Assets.xcassets in Resources */,
+				431224CD268356ED00803590 /* Localizable.strings in Resources */,
 				43A06C9726819DBF00F098FE /* Main.storyboard in Resources */,
 				436CA39D2681FEAB00391E20 /* THEnrkkrB.otf in Resources */,
 			);
@@ -292,6 +322,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		431224C62683565A00803590 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n";
+		};
 		D8AF16A5D32C1ECE6C29E5C9 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -354,10 +401,24 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		431224CF268356ED00803590 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				431224CE268356ED00803590 /* en */,
+				431224D0268356F100803590 /* zh-Hans */,
+				431224D1268356F300803590 /* ja */,
+				431224D2268356F400803590 /* ko */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		43A06C9526819DBF00F098FE /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				43A06C9626819DBF00F098FE /* Base */,
+				431224C82683569900803590 /* ko */,
+				431224CA268356CD00803590 /* ja */,
+				431224CC268356E000803590 /* zh-Hans */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -366,6 +427,9 @@
 			isa = PBXVariantGroup;
 			children = (
 				43A06C9B26819DC000F098FE /* Base */,
+				431224C72683569900803590 /* ko */,
+				431224C9268356CC00803590 /* ja */,
+				431224CB268356E000803590 /* zh-Hans */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -377,6 +441,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -438,6 +503,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";

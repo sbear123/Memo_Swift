@@ -10,12 +10,13 @@ import UIKit
 class MemoViewController: UITableViewController {
     
     let vm: MemoViewModel = MemoViewModel.shared
+    @IBOutlet var nav: UINavigationItem!
     
     @IBOutlet var table: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        nav.title = NSLocalizedString("Memo📝", comment: "Memo📝")
         self.refreshControl = UIRefreshControl()
         table.refreshControl = refreshControl!
         self.refreshControl!.addTarget(self, action: #selector(refresh), for: .valueChanged)

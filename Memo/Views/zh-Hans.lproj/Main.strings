@@ -1,0 +1,21 @@
+
+/* Class = "UILabel"; text = "title :  "; ObjectID = "1ov-8z-9LD"; */
+"1ov-8z-9LD.text" = "title :  ";
+
+/* Class = "UILabel"; text = "2021.06.22."; ObjectID = "25t-lc-zib"; */
+"25t-lc-zib.text" = "2021.06.22.";
+
+/* Class = "UINavigationItem"; title = "Memo📝"; ObjectID = "3Ho-rC-4KC"; */
+"3Ho-rC-4KC.title" = "Memo📝";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "LgD-Hk-fJJ"; */
+"LgD-Hk-fJJ.text" = "Title";
+
+/* Class = "UITextField"; placeholder = "제목을 입력하세요!"; ObjectID = "QHD-KQ-bYM"; */
+"QHD-KQ-bYM.placeholder" = "제목을 입력하세요!";
+
+/* Class = "UILabel"; text = "0000.00.00"; ObjectID = "o7o-bW-BjT"; */
+"o7o-bW-BjT.text" = "0000.00.00";
+
+/* Class = "UILabel"; text = "content"; ObjectID = "thx-Gd-iWw"; */
+"thx-Gd-iWw.text" = "content";

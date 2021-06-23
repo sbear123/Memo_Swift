@@ -94,6 +94,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="nav" destination="3Ho-rC-4KC" id="Ege-XU-FKW"/>
                         <outlet property="table" destination="age-z8-07B" id="IyC-t5-bj2"/>
                     </connections>
                 </tableViewController>
@@ -110,7 +111,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="제목을 입력하세요!" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QHD-KQ-bYM">
-                                <rect key="frame" x="97" y="106" width="297" height="35"/>
+                                <rect key="frame" x="108" y="106" width="286" height="35"/>
                                 <color key="textColor" red="0.13580432534217834" green="0.085929505527019501" blue="0.51807111501693726" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="THEYellM" family="THEYellM" pointSize="25"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -129,8 +130,8 @@
                                 <color key="textColor" red="0.40605264902114868" green="0.31604477763175964" blue="0.91117900609970093" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="제목 :  " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1ov-8z-9LD">
-                                <rect key="frame" x="20" y="106" width="67" height="35"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="title :  " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1ov-8z-9LD">
+                                <rect key="frame" x="20" y="106" width="78" height="35"/>
                                 <color key="tintColor" red="0.54768848419189453" green="0.53897619247436523" blue="0.91411316394805908" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="THEYellM" family="THEYellM" pointSize="27"/>
                                 <color key="textColor" red="0.40605264902114868" green="0.31604477763175964" blue="0.91117900609970093" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -164,6 +165,7 @@
                         <outlet property="contentM" destination="grj-Ky-Vct" id="WlI-Ku-Bjl"/>
                         <outlet property="dateM" destination="25t-lc-zib" id="Cei-JH-2Ho"/>
                         <outlet property="titleM" destination="QHD-KQ-bYM" id="4BD-KA-xfO"/>
+                        <outlet property="titleT" destination="1ov-8z-9LD" id="QNc-KX-zlx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uq0-RH-FGJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

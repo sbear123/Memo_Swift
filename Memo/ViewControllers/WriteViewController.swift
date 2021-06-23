@@ -21,9 +21,11 @@ class WriteViewController: UIViewController {
     var memo: Memo = Memo(id: "", title: "", content: "", nil)
     let vm: MemoViewModel = MemoViewModel.shared
     var isUpdate: Bool = false
+    @IBOutlet var titleT: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        titleT.text = NSLocalizedString("title : ", comment: "title : ")
         updateView()
         self.navigationItem.rightBarButtonItem = self.rightButton
     }
