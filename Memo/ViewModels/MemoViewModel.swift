@@ -47,9 +47,10 @@ class MemoViewModel {
             }).disposed(by: disposeBag)
     }
     
-    func delete(memo: Memo, handler: @escaping (Bool) -> Void){
-        network.delete(request: memo).subscribe(
+    func delete(num: Int, handler: @escaping (Bool) -> Void){
+        network.delete(request: memoList[num]).subscribe(
             onSuccess: { _ in
+                self.memoList.remove(at: num)
                 handler(true)
             },
             onFailure: { err in

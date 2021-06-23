@@ -45,12 +45,12 @@ class MemoFireBaseManager: BaseFireBaseManager {
         }
     }
     
-    func delete(request: Memo) -> Single<Void> {
+    func delete(request: Memo) -> Single<Bool> {
         let databaseRef = dataBase.collection("/Memo")
-        return Single<Void>.create { single in
+        return Single<Bool>.create { single in
             let semaphore = DispatchSemaphore(value: 0)
-            databaseRef.document().delete() {
-                $0 == nil ? single(.success(Void())) : single(.failure($0!))
+            databaseRef.document(request.id).delete() {
+                $0 == nil ? single(.success(true)) : single(.failure($0!))
                 semaphore.signal()
             }
             return Disposables.create()
